@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Form Section -->
+    <div class="form-container">
+        <form id="resume-form">
+            <h2>Create Your Professional Resume</h2>
+
+            <!-- Personal Information -->
+            <div class="segment-header">Personal Information</div>
+            <div class="form-section">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                <label for="photo">Upload Your Photo:</label>
+                <input type="file" id="photo" accept="image/*" required>
+            </div>
+
+            <!-- Education Section -->
+            <div class="segment-header">Education</div>
+            <div id="education-section">
+                <!-- Education fields will be added dynamically here -->
+            </div>
+            <button type="button" id="add-education" class="add-button">+ Add Education</button>
+
+            <!-- Work Experience Section -->
+            <div class="segment-header">Work Experience</div>
+            <div id="work-experience-section">
+                <!-- Work experience fields will be added dynamically here -->
+            </div>
+            <button type="button" id="add-work-experience" class="add-button">+ Add Work Experience</button>
+
+            <!-- Skills -->
+            <div class="segment-header">Skills</div>
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" placeholder="Enter your skills" required>
+
+            <!-- Generate Resume Button -->
+            <button type="submit" id="generate-resume">Generate Resume</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

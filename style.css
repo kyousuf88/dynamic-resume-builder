@@ -1,0 +1,130 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Calibri', sans-serif; /* Set font to Calibri */
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Centered Form Container */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Form Title */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.75em;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Segment Header (Bold and Blue) */
+.segment-header {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #007bff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #007bff; /* Line below each segment */
+    padding-bottom: 5px;
+}
+
+/* Form Section Styling */
+.form-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Add Button Styles */
+.add-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+/* Generate Resume Button */
+button[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+    }
+}
